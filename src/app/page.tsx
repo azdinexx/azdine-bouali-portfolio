@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
+import Portfolio from '../components/Portfolio';
 /*
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutMe />
+      <Portfolio />
       {/*       
       <Projects />
       <Contact />

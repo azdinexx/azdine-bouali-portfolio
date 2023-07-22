@@ -9,7 +9,7 @@ function Hero() {
         </h1>
 
         <button
-          className='text-xl py-2 px-6 font-
+          className='text-xl py-2 px-6 
           rounded-md bg-gradient-to-r from-[#5e9fe1] to-[#4F4CBA] mb-10 shadow-md shadow-[#5e9fe1]'
         >
           Previus Projects
