@@ -1,31 +1,37 @@
-import Link from 'next/link';
+import { Sansita_Swashed } from 'next/font/google';
+
+const sansita_Swashed = Sansita_Swashed({
+  subsets: ['latin'],
+  weight: ['500'],
+  display: 'swap',
+});
+/* 
+#5497da
+#4F4CBA 
+
+*/
 
 function Header() {
-  const liStyles =
-    'text-sm font-medium text-gray-700 hover:text-gray-900 mr-4 last:mr-0 hover:underline transition-all duration-400 ease-in-out';
   return (
-    <header className='py-4 flex items-center gap-2 justify-between mx-6'>
-      <h1 className='text-lg font-bold' id='top'>
-        Portfolio
-      </h1>
-      {/* navigation */}
-      <nav>
-        <ul className='flex'>
-          <li className={liStyles}>
-            <Link href='/'>Home</Link>
-          </li>
-
-          <li className={liStyles}>
-            <Link href='#projects' className='scroll-smooth  '>
-              Projects
-            </Link>
-          </li>
-          <li className={liStyles}>
-            <a href='#contact'>Contact</a>
-          </li>
+    <div className='py-4 flex justify-between items-center'>
+      <div className={`${sansita_Swashed.className} text-lg`}>
+        Azdine Bouali
+      </div>
+      <nav className='flex gap-10 items-center'>
+        <ul className='flex gap-4'>
+          <li>contact</li>
+          <li>home</li>
+          <li>services</li>
+          <li>about me</li>
         </ul>
+        <button
+          className='py-2 px-6 font-
+          rounded-md bg-gradient-to-r from-[#5e9fe1] to-[#4F4CBA]'
+        >
+          Hire me
+        </button>
       </nav>
-    </header>
+    </div>
   );
 }
 
