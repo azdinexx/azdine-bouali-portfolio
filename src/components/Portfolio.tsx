@@ -21,7 +21,7 @@ function Portfolio() {
       <div className='flex justify-center'>
         <button
           className='text-sm py-2 px-10 font-
-        rounded-md        bg-gradient-to-r from-[#5e9fe1] to-[#4F4CBA] my-10   '
+        rounded-md mt-20       bg-gradient-to-r from-[#5e9fe1] to-[#4F4CBA] my-10   '
         >
           View All
         </button>

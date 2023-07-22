@@ -13,6 +13,7 @@ function AboutMe() {
             className='w-72 h-[26rem] object-cover   rounded-md'
           />
           <a
+            target='_blank'
             href='https://unsplash.com/@unstable_affliction'
             className='absolute bottom-1  text-[#4eb7df] text-xs font-semibold hover:underline left-1/2 -translate-x-1/2'
           >
