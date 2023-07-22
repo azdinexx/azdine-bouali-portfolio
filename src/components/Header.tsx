@@ -5,11 +5,6 @@ const sansita_Swashed = Sansita_Swashed({
   weight: ['500'],
   display: 'swap',
 });
-/* 
-#5497da
-#4F4CBA 
-
-*/
 
 function Header() {
   return (
