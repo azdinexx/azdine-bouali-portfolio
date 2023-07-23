@@ -1,0 +1,84 @@
+{
+  "services": [
+    {
+      "name": "Web",
+      "items": [
+        {
+          "id": 1,
+          "title": "Custom Website Development",
+          "description": "are you looking for a custom website? We can help you with that. We have a team of developers that can help you develop a custom website that meets your needs."
+        },
+        {
+          "id": 2,
+          "title": "Custom Ecommerce Development",
+          "description": "are you looking to create an online store? We can help you with that. We have a team of developers that can help you build a custom ecommerce store that meets your needs."
+        },
+        {
+          "id": 3,
+          "title": "Custom CMS Development",
+          "description": "are you looking for a content management system that can help you manage your website content? We can help you with that. We have a team of developers that can help you build a custom CMS that meets your needs."
+        }
+      ]
+    },
+    {
+      "name": "Extensions",
+      "items": [
+        {
+          "id": 1,
+          "title": "Custom Chrome/Mozilla Extension",
+          "description": "are you looking to create a custom extension for Chrome or Firefox? We can help you with that. We have a team of developers that can help you build a custom extension that meets your needs."
+        },
+        {
+          "id": 2,
+          "title": "Custom Mobile App Extension",
+          "description": "are you looking to create a custom extension for a mobile app? We can help you with that. We have a team of developers that can help you build a custom extension that meets your needs."
+        },
+        {
+          "id": 3,
+          "title": "Custom Enterprise Extension",
+          "description": "are you looking to create a custom extension for an enterprise application? We can help you with that. We have a team of developers that can help you build a custom extension that meets your needs."
+        }
+      ]
+    },
+    {
+      "name": "CMS",
+      "items": [
+        {
+          "id": 1,
+          "title": "Custom WordPress Development",
+          "description": "are you looking to create a custom WordPress website? We can help you with that. We have a team of developers that can help you build a custom WordPress website that meets your needs."
+        },
+        {
+          "id": 2,
+          "title": "Custom Joomla Development",
+          "description": "are you looking to create a custom Joomla website? We can help you with that. We have a team of developers that can help you build a custom Joomla website that meets your needs."
+        },
+        {
+          "id": 3,
+          "title": "Custom Drupal Development",
+          "description": "are you looking to create a custom Drupal website? We can help you with that. We have a team of developers that can help you build a custom Drupal website that meets your needs."
+        }
+      ]
+    },
+    {
+      "name": "Scripting",
+      "items": [
+        {
+          "id": 1,
+          "title": "Custom JavaScript Development",
+          "description": "are you looking to create custom JavaScript code? We can help you with that. We have a team of developers that can help you write custom JavaScript code that meets your needs."
+        },
+        {
+          "id": 2,
+          "title": "Custom PHP Development",
+          "description": "are you looking to create custom PHP code? We can help you with that. We have a team of developers that can help you write custom PHP code that meets your needs."
+        },
+        {
+          "id": 3,
+          "title": "Custom Python Development",
+          "description": "are you looking to create custom Python code? We can help you with that. We have a team of developers that can help you write custom Python code that meets your needs."
+        }
+      ]
+    }
+  ]
+}

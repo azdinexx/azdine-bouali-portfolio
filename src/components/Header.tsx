@@ -1,6 +1,6 @@
 import { Sansita_Swashed } from 'next/font/google';
 
-const sansita_Swashed = Sansita_Swashed({
+export const sansita_Swashed = Sansita_Swashed({
   subsets: ['latin'],
   weight: ['500'],
   display: 'swap',
