@@ -79,7 +79,7 @@ function Service({
   description: string;
 }) {
   return (
-    <div className='w-64 h-48 bg-white/5 rounded   p-4 flex flex-col justify-center  gap-2'>
+    <div className='md:w-64 w-full h36 md:h-48 bg-white/5 hover:bg-white/25 rounded   p-4 flex flex-col justify-center  gap-2'>
       <div className='flex  gap-2 font-semibold'>
         <h2>{title}</h2>
       </div>
@@ -88,7 +88,20 @@ function Service({
           ? description.slice(0, 100) + '...'
           : description}
       </p>
-      <button className='underline text-left w-fit'>more</button>
+      <button className='underline text-left w-fit flex hover:text-slate-400'>
+        more
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='25'
+          height='25'
+          viewBox='0 0 24 24'
+        >
+          <path
+            fill='currentColor'
+            d='M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4L6.4 18Z'
+          />
+        </svg>
+      </button>
     </div>
   );
 }
@@ -99,7 +112,7 @@ function AskForService() {
       className='  bg-gradient-to-r from-[#4eb7df] to-[#4F4CBA]
     
      hover:from-[#4eb6dfa6] hover:to-[#504cba92]
-    w-64 h-48 rounded   p-4 flex flex-col justify-center  text-center '
+     md:w-64 w-full h36 md:h-48 rounded   p-4 flex flex-col justify-center  text-center '
     >
       <h2 className=''>Don&apos;t see what you need?</h2>
 
