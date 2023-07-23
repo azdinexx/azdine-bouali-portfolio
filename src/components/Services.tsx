@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Project from './Project';
 import data from '../../public/services.json';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -53,17 +54,19 @@ function Portfolio() {
           </li>
         </ul>
       </nav>
-      {index === 0 ? (
-        <Website />
-      ) : index === 1 ? (
-        <ChromeExtension />
-      ) : index === 2 ? (
-        <Scripting />
-      ) : index === 3 ? (
-        <CMS />
-      ) : (
-        ''
-      )}
+      <AnimatePresence>
+        {index === 0 ? (
+          <Website />
+        ) : index === 1 ? (
+          <ChromeExtension />
+        ) : index === 2 ? (
+          <Scripting />
+        ) : index === 3 ? (
+          <CMS />
+        ) : (
+          ''
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -71,6 +74,7 @@ function Portfolio() {
 export default Portfolio;
 
 function Service({
+  id,
   title,
   description,
 }: {
@@ -79,7 +83,12 @@ function Service({
   description: string;
 }) {
   return (
-    <div className='md:w-64 w-full h36 md:h-48 bg-white/5 hover:bg-white/25 rounded   p-4 flex flex-col justify-center  gap-2'>
+    <motion.div
+      initial={{ y: 25, opacity: 0, scale: 0.95 }}
+      whileInView={{ y: 0, opacity: 1, scale: 1 }}
+      transition={{ duration: 0.2, delay: 0.2 * id }}
+      className='md:w-64 w-full h36 md:h-48 bg-white/5 hover:bg-white/25 rounded   p-4 flex flex-col justify-center  gap-2'
+    >
       <div className='flex  gap-2 font-semibold'>
         <h2>{title}</h2>
       </div>
@@ -102,13 +111,16 @@ function Service({
           />
         </svg>
       </button>
-    </div>
+    </motion.div>
   );
 }
 
 function AskForService() {
   return (
-    <div
+    <motion.div
+      initial={{ y: 25, opacity: 0, scale: 0.95 }}
+      whileInView={{ y: 0, opacity: 1, scale: 1 }}
+      transition={{ duration: 0.2, delay: 0.4 }}
       className='  bg-gradient-to-r from-[#4eb7df] to-[#4F4CBA]
     
      hover:from-[#4eb6dfa6] hover:to-[#504cba92]
@@ -117,7 +129,7 @@ function AskForService() {
       <h2 className=''>Don&apos;t see what you need?</h2>
 
       <button className='underline  '>Contact me</button>
-    </div>
+    </motion.div>
   );
 }
 

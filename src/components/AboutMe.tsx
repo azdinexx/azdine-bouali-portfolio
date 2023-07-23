@@ -1,10 +1,17 @@
+'use client';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 function AboutMe() {
   return (
     <div className='min-h-[90vh] flex flex-col md:flex-row   md:gap-20'>
       <div className='md:w-1/2  flex  items-center justify-center '>
-        <div className=' relative before:absolute before:content-[""]  before:w-full before:h-full md:before:border-[.5rem] before:border-4 before:border-[#4eb7df] md:before:bottom-6 md:before:left-6 before:bottom-2 before:left-2 before:rounded-md'>
+        <motion.div
+          initial={{ x: -25, opacity: 0, scale: 0.95 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 0.2, delay: 0.2 }}
+          className=' relative before:absolute before:content-[""]  before:w-full before:h-full md:before:border-[.5rem] before:border-4 before:border-[#4eb7df] md:before:bottom-6 md:before:left-6 before:bottom-2 before:left-2 before:rounded-md'
+        >
           <Image
             src='/profile.jpg'
             alt='azdine bouali'
@@ -19,9 +26,14 @@ function AboutMe() {
           >
             @IvanBandura
           </a>
-        </div>
+        </motion.div>
       </div>
-      <div className='md:w-1/2   flex flex-col justify-center items-start p-6 '>
+      <motion.div
+        initial={{ x: 25, opacity: 0, scale: 0.95 }}
+        whileInView={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        className='md:w-1/2   flex flex-col justify-center items-start p-6 '
+      >
         <h2 className='my-5 text-xl font-semibold underline decoration-wavy decoration-[.18rem] text-[#4eb7df] '>
           About Me
         </h2>
@@ -48,7 +60,7 @@ function AboutMe() {
           </svg>
           Download My CV
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,4 +1,6 @@
+'use client';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 function Project({ reverse = false }: { reverse?: boolean }) {
   let textStyles = 'grid place-content-center mb-10';
@@ -8,7 +10,12 @@ function Project({ reverse = false }: { reverse?: boolean }) {
     imageStyles += ' order-1';
   }
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:grid-rows-1    '>
+    <motion.div
+      initial={{ y: 45, opacity: 0, scale: 0.95 }}
+      whileInView={{ y: 0, opacity: 1, scale: 1 }}
+      transition={{ duration: 0.2 }}
+      className='grid grid-cols-1 md:grid-cols-2 gap-10 md:grid-rows-1    '
+    >
       <div className={textStyles}>
         <div className='max-w-sm flex flex-col gap-2'>
           <p className='font-thin text-2xl text-[#4eb7df] '>Project 1</p>
@@ -36,7 +43,7 @@ function Project({ reverse = false }: { reverse?: boolean }) {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
