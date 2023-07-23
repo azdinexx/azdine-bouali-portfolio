@@ -73,7 +73,8 @@ function Contact() {
         </div>
         <div className='flex items-center justify-center'>
           <form
-            action=''
+            action='https://send.pageclip.co/bzDEnc0kp4p3Ekn14rnubRTv0KzG1J2m/azdinePortfolio'
+            method='post'
             className='mt-5 p-5   max-w-sm flex flex-col gap-5 bg-gradient-to-br from-[#4eb7df] to-[#4F4CBA] rounded-lg'
           >
             <label htmlFor='name'>
@@ -104,7 +105,9 @@ function Contact() {
                 placeholder='Message'
               ></textarea>
             </label>
-            <button type='submit'>Send</button>
+            <button className='pageclip-form__submit' type='submit'>
+              Send
+            </button>
           </form>
         </div>
       </div>

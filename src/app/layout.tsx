@@ -21,10 +21,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <script async src='https://s.pageclip.co/v1/pageclip.js'></script>
+      <link
+        precedence='default'
+        rel='stylesheet'
+        href='https://s.pageclip.co/v1/pageclip.css'
+        media='screen'
+      ></link>
       <body className={poppins.className}>
         <main className='max-w-5xl mx-auto '>{children}</main>
         <Contact />
       </body>
     </html>
   );
+  9;
 }
