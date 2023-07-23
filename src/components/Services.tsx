@@ -86,7 +86,7 @@ function Service({
     <motion.div
       initial={{ y: 25, opacity: 0, scale: 0.95 }}
       whileInView={{ y: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.2, delay: 0.2 * id }}
+      transition={{ duration: 0.1, delay: 0.1 * id }}
       className='md:w-64 w-full h36 md:h-48 bg-white/5 hover:bg-white/25 rounded   p-4 flex flex-col justify-center  gap-2'
     >
       <div className='flex  gap-2 font-semibold'>

@@ -1,21 +1,29 @@
+'use client';
 import { Sansita_Swashed } from 'next/font/google';
 
-export const sansita_Swashed = Sansita_Swashed({
+const sansita_Swashed = Sansita_Swashed({
   subsets: ['latin'],
   weight: ['500'],
   display: 'swap',
 });
-
+import { motion } from 'framer-motion';
 function Header() {
   return (
-    <div className='py-4 flex justify-between items-center'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.2 }}
+      className='py-4 flex justify-between items-center'
+    >
       <div className={`${sansita_Swashed.className} text-lg`}>
         Azdine Bouali
       </div>
       <nav className='flex gap-10 items-center'>
-        <ul className='flex gap-4'>
-          <li>contact</li>
+        <ul className='md:flex gap-4 hidden '>
+          <li>home</li>
           <li>services</li>
+          <li>projects</li>
+          <li>contact</li>
         </ul>
         <button
           className='py-2 px-6 font-
@@ -24,7 +32,7 @@ function Header() {
           Hire me
         </button>
       </nav>
-    </div>
+    </motion.div>
   );
 }
 

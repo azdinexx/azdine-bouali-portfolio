@@ -1,5 +1,11 @@
 import { AkarIconsLinkedinv2Fill } from '@/icones/linkedin';
-import { sansita_Swashed } from './Header';
+import { Sansita_Swashed } from 'next/font/google';
+
+export const sansita_Swashed = Sansita_Swashed({
+  subsets: ['latin'],
+  weight: ['500'],
+  display: 'swap',
+});
 import { IconParkGithubOne } from '@/icones/github';
 function Footer() {
   return (

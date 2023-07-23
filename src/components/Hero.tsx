@@ -23,12 +23,14 @@ function Hero() {
           Full Stack <br /> Software <br /> Developer
         </motion.h1>
 
-        <button
+        <motion.button
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
           className='text-xl py-2 px-6 
           rounded-md bg-gradient-to-r from-[#5e9fe1] to-[#4F4CBA] mb-10 shadow-md shadow-[#5e9fe1]'
         >
           Previus Projects
-        </button>
+        </motion.button>
       </div>
     </div>
   );
