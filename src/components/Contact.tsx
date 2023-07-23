@@ -8,13 +8,13 @@ function Contact() {
     'after:absolute after:w-72 after:h-72 after:bg-black after:right-0 after:top-0 after:content-[""] after:-translate-y-1/2 after:translate-x-1/2 after:rounded-full  after:bg-gradient-to-br after:from-[#4eb7df] after:to-[#4F4CBA] after:opacity-70';
   return (
     <div
-      className={`bg-gradient-to-tl from-[#4eb7df] to-[#4F4CBA] min-h-screen rounded-t-[8rem] p-20 py-10 overflow-hidden relative ${before} ${after}`}
+      className={`bg-gradient-to-tl from-[#4eb7df] to-[#4F4CBA] min-h-screen rounded-lg md:rounded-t-[8rem] md:p-20 p-5 py-10 overflow-hidden relative ${before} ${after}`}
     >
       <h2 className='text-2xl text-center'>Contact</h2>
-      <div className='grid grid-cols-2 gap-10 pt-10 mb-10'>
-        <div>
+      <div className='grid gridcols-1 md:grid-cols-2 md:gap-10 pt-10 mb-10'>
+        <div className='flex flex-col items-center md:items-start'>
           <h2 className='my-6 text-xl'>Drop Me a Message</h2>
-          <p className='max-w-sm'>
+          <p className='max-w-sm text-justify'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolores
             voluptate, quas nesciunt recusandae labore qui dolor sed error
             veritatis, eum est. Rerum perferendis provident necessitatibus non

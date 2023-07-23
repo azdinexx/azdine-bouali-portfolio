@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 function Project({ reverse = false }: { reverse?: boolean }) {
-  let textStyles = 'grid place-content-center';
-  let imageStyles = 'grid place-content-center';
+  let textStyles = 'grid place-content-center mb-10';
+  let imageStyles = 'grid place-content-center ';
   if (reverse) {
-    textStyles += ' order-3';
+    textStyles += ' order-1 md:order-3';
     imageStyles += ' order-1';
   }
   return (
-    <div className='grid grid-cols-2 gap-10 grid-rows-1 h-72  '>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:grid-rows-1    '>
       <div className={textStyles}>
         <div className='max-w-sm flex flex-col gap-2'>
           <p className='font-thin text-2xl text-[#4eb7df] '>Project 1</p>
@@ -25,13 +25,13 @@ function Project({ reverse = false }: { reverse?: boolean }) {
       </div>
 
       <div className={imageStyles}>
-        <div className='border-[.5rem] border-[#4eb7df] h-60 w-[24rem] relative rounded-md'>
+        <div className='md:border-[.5rem] border-4 border-[#4eb7df] md:h-60 h-48 w-[20rem] md:w-[24rem] relative rounded-md'>
           <Image
             src='/projects/ecomerce.png'
             alt=''
             width={500}
             height={500}
-            className='absolute  h-60 w-[24rem] left-6 bottom-6 object-cover rounded-md'
+            className='absolute  md:h-60  h-48 w-[20rem] md:w-[24rem] md:left-6 left-2 bottom-2 md:bottom-6 object-cover rounded-md'
             draggable={false}
           />
         </div>

@@ -28,7 +28,7 @@ function Portfolio() {
               }
               onClick={() => setIndex(1)}
             >
-              Chrome Extension
+              Extension
             </button>
           </li>
           <li>
@@ -111,10 +111,10 @@ function AskForService() {
 function Website() {
   return (
     <>
-      <h2 className='absolute  pointer-events-none text-9xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
+      <h2 className='absolute  pointer-events-none md:text-9xl text-5xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
         Website
       </h2>
-      <div className='relative grid grid-cols-3 gap-10 p-20'>
+      <div className='relative grid grid-cols-1 place-items-center md:grid-cols-3 gap-10 p-10 md:p-20'>
         {data.services
           .find((service) => {
             return service.name === 'Web';
@@ -131,10 +131,10 @@ function Website() {
 function ChromeExtension() {
   return (
     <>
-      <h2 className='absolute pointer-events-none text-9xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
+      <h2 className='absolute pointer-events-none md:text-9xl text-5xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
         Chrome Extension
       </h2>
-      <div className=' relative grid grid-cols-3 gap-10 p-20'>
+      <div className=' relative grid grid-cols-1 place-items-center md:grid-cols-3 gap-10 p-10 md:p-20'>
         {data.services
           .find((service) => {
             return service.name === 'Extensions';
@@ -150,10 +150,10 @@ function ChromeExtension() {
 function Scripting() {
   return (
     <>
-      <h2 className='absolute pointer-events-none text-9xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
+      <h2 className='absolute pointer-events-none md:text-9xl text-5xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
         Scripting
       </h2>
-      <div className=' relative grid grid-cols-3 gap-10 p-20'>
+      <div className=' relative grid grid-cols-1 place-items-center md:grid-cols-3 gap-10 p-10 md:p-20'>
         {data.services
           .find((service) => {
             return service.name === 'Scripting';
@@ -169,10 +169,10 @@ function Scripting() {
 function CMS() {
   return (
     <>
-      <h2 className='absolute pointer-events-none text-9xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
+      <h2 className='absolute pointer-events-none md:text-9xl text-5xl right-1/2 translate-x-1/2 -z text-[#fff]/5 '>
         CMS
       </h2>
-      <div className='relative grid grid-cols-3 gap-10 p-20'>
+      <div className='relative grid grid-cols-1 place-items-center md:grid-cols-3 gap-10 p-10 md:p-20'>
         {data.services
           .find((service) => {
             return service.name === 'CMS';

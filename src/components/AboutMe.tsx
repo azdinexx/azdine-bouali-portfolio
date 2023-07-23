@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 function AboutMe() {
   return (
-    <div className='min-h-[90vh] flex gap-20'>
-      <div className='w-1/2  flex items-center justify-center '>
-        <div className='relative before:absolute before:content-[""]  before:w-full before:h-full before:border-[.5rem] before:border-[#4eb7df] before:bottom-6 before:left-6  before:rounded-md'>
+    <div className='min-h-[90vh] flex flex-col md:flex-row   md:gap-20'>
+      <div className='md:w-1/2  flex  items-center justify-center '>
+        <div className=' relative before:absolute before:content-[""]  before:w-full before:h-full md:before:border-[.5rem] before:border-4 before:border-[#4eb7df] md:before:bottom-6 md:before:left-6 before:bottom-2 before:left-2 before:rounded-md'>
           <Image
             src='/profile.jpg'
             alt='azdine bouali'
@@ -15,13 +15,13 @@ function AboutMe() {
           <a
             target='_blank'
             href='https://unsplash.com/@unstable_affliction'
-            className='absolute bottom-1  text-[#4eb7df] text-xs font-semibold hover:underline left-1/2 -translate-x-1/2'
+            className='absolute md:bottom-1 bottom-4  text-[#4eb7df] text-xs font-semibold hover:underline left-1/2 -translate-x-1/2'
           >
             @IvanBandura
           </a>
         </div>
       </div>
-      <div className='w-1/2   flex flex-col justify-center items-start p-6 '>
+      <div className='md:w-1/2   flex flex-col justify-center items-start p-6 '>
         <h2 className='my-5 text-xl font-semibold underline decoration-wavy decoration-[.18rem] text-[#4eb7df] '>
           About Me
         </h2>

@@ -15,9 +15,7 @@ function Header() {
       <nav className='flex gap-10 items-center'>
         <ul className='flex gap-4'>
           <li>contact</li>
-          <li>home</li>
           <li>services</li>
-          <li>about me</li>
         </ul>
         <button
           className='py-2 px-6 font-
