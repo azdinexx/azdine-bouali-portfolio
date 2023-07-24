@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function AboutMe() {
   return (
@@ -41,25 +42,32 @@ function AboutMe() {
           I am a full stack software developer with over a year of experience
           building and delivering high-quality web applications. I am proficient
           in a variety of programming languages and technologies, including
-          JavaScript, React, Node.js, Python, Django, and SQL.
+          JavaScript, React, Node.js, Nextjs, MongoDB, and SQL.
         </p>
-        <button
-          className='my-10 text-xl py-3 px-6 font-
-          rounded-md bg-gradient-to-r from-[#4eb7df] to-[#4F4CBA] hover:bg-gradient-to-tr hover:from-[#4F4CBA] hover:to-[#5e9fe1] transition-colors  duration-500 hover:transition-colors  hover:duration-500 flex items-center gap-2'
+        <Link
+          href={
+            'https://drive.google.com/file/d/19b4c83aU_Uf7yNl9Pl60bJeLUPsEynXk/view?usp=sharing'
+          }
+          target='_blank'
         >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='25'
-            height='25'
-            viewBox='0 0 24 24'
+          <button
+            className='my-10 text-xl py-3 px-6 font-
+          rounded-md bg-gradient-to-r from-[#4eb7df] to-[#4F4CBA] hover:bg-gradient-to-tr hover:from-[#4F4CBA] hover:to-[#5e9fe1] transition-colors  duration-500 hover:transition-colors  hover:duration-500 flex items-center gap-2'
           >
-            <path
-              fill='currentColor'
-              d='m14 2l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8m4 18V9h-5V4H6v16h12m-6-1l-4-4h2.5v-3h3v3H16l-4 4Z'
-            />
-          </svg>
-          Download My CV
-        </button>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='25'
+              height='25'
+              viewBox='0 0 24 24'
+            >
+              <path
+                fill='currentColor'
+                d='m14 2l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8m4 18V9h-5V4H6v16h12m-6-1l-4-4h2.5v-3h3v3H16l-4 4Z'
+              />
+            </svg>
+            Download My CV
+          </button>
+        </Link>
       </motion.div>
     </div>
   );

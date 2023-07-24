@@ -1,7 +1,7 @@
 import Project from './Project';
 function Portfolio() {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen' id='projects'>
       <h2 className='uppercase text-center font-bold mb-10 mt-20'>Portfolio</h2>
       <nav>
         <ul className='flex justify-between max-w-md mx-auto'>
