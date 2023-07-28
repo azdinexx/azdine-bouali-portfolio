@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google';
 import { Metadata } from 'next';
 import Contact from '../components/Contact';
 import Header from '@/components/Header';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
@@ -26,10 +27,10 @@ export default function RootLayout({
         <main className='max-w-5xl mx-auto px-4 md:px-2  '>
           <Header />
           {children}
+          <Analytics />
         </main>
         <Contact />
       </body>
     </html>
   );
-  9;
 }
