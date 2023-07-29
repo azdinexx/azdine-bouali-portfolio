@@ -15,7 +15,7 @@ function Header() {
       transition={{ delay: 0.2 }}
       className='py-4 flex justify-between items-center'
     >
-      <div className={`${sansita_Swashed.className} text-lg`}>
+      <div className={`${sansita_Swashed.className} text-2xl`}>
         Azdine Bouali
       </div>
       <nav className='flex gap-10 items-center'>

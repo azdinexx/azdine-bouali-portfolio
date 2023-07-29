@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "thumbnail": "/projects/ecomerce.png",
+      "type": "website",
+      "tag": "FullStack",
+      "title": "artossi | web design",
+      "slug": "artossi-ecommerce-website",
+      "description": "artossi is a web design company based in the Netherlands. I was responsible for the design and development of the website.",
+      "article": "artossi is company specialised in crafting and selling handmade moroccan products,artossi is based in Morocco.\n  I was responsible for the design and development of the website.  artossi is a web design company based in the Netherlands. I was responsible for the design and development of the website.      artossi is a web design company based in the Netherlands. I was responsible for the design and development of the website.",
+      "links": {
+        "live": "",
+        "github": ""
+      }
+    },
+    {
+      "id": 2,
+      "thumbnail": "/projects/shadowtool.png",
+      "type": "tool",
+      "tag": "Frontend",
+      "title": "Shadow Tool | box shadow Generator tool",
+      "slug": "shadow-tool",
+      "description": " Shadow Tool is a tool that allows you to generate box shadow css code for your website.",
+      "article": " Shadow Tool is a tool that allows you to generate box shadow css code for your website. Shadow Tool is a tool that allows you to generate box shadow css code for your website. Shadow Tool is a tool that allows you to generate box shadow css code for your website. Shadow Tool is a tool that allows you to generate box shadow css code for your website.",
+      "links": {
+        "live": "",
+        "github": ""
+      }
+    }
+  ]
+}

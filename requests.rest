@@ -1,9 +1,3 @@
-POST  http://localhost:3000/api/contact
-Content-Type: application/json
- 
 
-{
-    "name": "John Doe",
-    "message": "Hello World"
 
-}
+GET  http://localhost:3000/api/projects/shadow-tool

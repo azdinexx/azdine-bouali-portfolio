@@ -1,8 +1,30 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-function Project({ reverse = false }: { reverse?: boolean }) {
+export interface ProjectType {
+  id: number;
+  title: string;
+  slug: string;
+  type: 'website' | 'tool' | 'script';
+  description: string;
+  thumbnail: string;
+  tag: string;
+  link: {
+    live: string;
+    github: string;
+  };
+  article: string;
+}
+
+function Project({
+  reverse = false,
+  project,
+}: {
+  reverse?: boolean;
+  project: ProjectType;
+}) {
   let textStyles = 'grid place-content-center mb-10';
   let imageStyles = 'grid place-content-center ';
   if (reverse) {
@@ -18,26 +40,26 @@ function Project({ reverse = false }: { reverse?: boolean }) {
     >
       <div className={textStyles}>
         <div className='max-w-sm flex flex-col gap-2'>
-          <p className='font-thin text-2xl text-[#4eb7df] '>Project 1</p>
-          <h2 className='font-bold text-xl'>Ecommerce Website</h2>
+          <p className='font-thin text-2xl text-[#4eb7df] '>{project.tag}</p>
+          <h2 className='font-bold text-xl'>{project.title}</h2>
           <p className='text-justify font-semibold text-gray-200'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quod
-            minima cum sint repellat possimus saepe deleniti! Corporis,
-            architecto similique.
+            {project.description}
           </p>
-          <button className='bg-gradient-to-r from-teal-500  to-purple-400   text-transparent bg-clip-text font-bold hover:opacity-75 flex'>
-            Read More
-          </button>
+          <Link href={`/projects/${project.slug}`}>
+            <button className='bg-gradient-to-r from-teal-500  to-purple-400   text-transparent bg-clip-text font-bold hover:opacity-75 flex'>
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
 
       <div className={imageStyles}>
         <div className='md:border-[.5rem] border-4 border-[#4eb7df] md:h-60 h-48 w-[20rem] md:w-[24rem] relative rounded-md'>
           <Image
-            src='/projects/ecomerce.png'
+            src={project.thumbnail}
             alt=''
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             className='absolute  md:h-60  h-48 w-[20rem] md:w-[24rem] md:left-6 left-2 bottom-2 md:bottom-6 object-cover rounded-md'
             draggable={false}
           />
