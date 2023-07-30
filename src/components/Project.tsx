@@ -44,7 +44,7 @@ function Project({
       <div className={textStyles}>
         <div className='max-w-sm flex flex-col gap-2'>
           <p className='font-thin text-2xl text-[#4eb7df] '>{project.tag}</p>
-          <h2 className='font-bold text-xl'>{project.title}</h2>
+          <h2 className='font-bold text-xl uppercase'>{project.title}</h2>
           <p className='text-justify font-semibold text-gray-200'>
             {project.description}
           </p>

@@ -8,6 +8,7 @@ function Contact() {
     'after:absolute after:w-72 after:h-72 after:bg-black after:right-0 after:top-0 after:content-[""] after:-translate-y-1/2 after:translate-x-1/2 after:rounded-full  after:bg-gradient-to-br after:from-[#4eb7df] after:to-[#4F4CBA] after:opacity-70';
   return (
     <div
+      id='contact'
       className={`bg-gradient-to-tl from-[#4eb7df] to-[#4F4CBA] min-h-screen rounded-lg md:rounded-t-[8rem] md:p-20 p-5 py-10 overflow-hidden relative ${before} ${after}`}
     >
       <h2 className='text-2xl text-center'>Contact</h2>
@@ -75,36 +76,30 @@ function Contact() {
           <form
             action=' '
             method='post'
-            className='mt-5 p-5   max-w-sm flex flex-col gap-5 bg-gradient-to-br from-[#4eb7df] to-[#4F4CBA] rounded-lg'
+            className='mt-5 p-5  w-full flex flex-col gap-5 bg-gradient-to-br from-[#4eb7df] to-[#4F4CBA] rounded-lg'
           >
-            <label htmlFor='name'>
-              <input
-                className='pl-5 bg-slate-800 text-white py-2 rounded-md w-auto'
-                type='text'
-                name='name'
-                id='name'
-                placeholder='Name'
-                autoComplete='off'
-              />
-            </label>
-            <label htmlFor='email'>
-              <input
-                className='pl-5 bg-slate-800 text-white py-2 rounded-md w-auto'
-                type='email'
-                name='email'
-                id='email'
-                placeholder='Email'
-                autoComplete='off'
-              />
-            </label>
-            <label htmlFor='message'>
-              <textarea
-                className='p-5 rounded-md bg-slate-800 text-white h-36'
-                name='message'
-                id='message'
-                placeholder='Message'
-              ></textarea>
-            </label>
+            <input
+              className='pl-5 bg-slate-800 text-white py-2 rounded-md w-full'
+              type='text'
+              name='name'
+              id='name'
+              placeholder='Name'
+              autoComplete='off'
+            />
+            <input
+              className='pl-5 bg-slate-800 text-white py-2 rounded-md w-full'
+              type='email'
+              name='email'
+              id='email'
+              placeholder='Email'
+              autoComplete='off'
+            />
+            <textarea
+              className='p-5 rounded-md bg-slate-800 text-white h-36'
+              name='message'
+              id='message'
+              placeholder='Message'
+            ></textarea>
             <button type='submit'>Send</button>
           </form>
         </div>

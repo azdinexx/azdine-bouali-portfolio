@@ -1,5 +1,6 @@
 'use client';
 import { Sansita_Swashed } from 'next/font/google';
+import Link from 'next/link';
 
 const sansita_Swashed = Sansita_Swashed({
   subsets: ['latin'],
@@ -15,15 +16,23 @@ function Header() {
       transition={{ delay: 0.2 }}
       className='py-4 flex justify-between items-center'
     >
-      <div className={`${sansita_Swashed.className} text-2xl`}>
-        Azdine Bouali
-      </div>
+      <Link href={'/'}>
+        <div className={`${sansita_Swashed.className} text-2xl`}>
+          Azdine Bouali
+        </div>
+      </Link>
       <nav className='flex gap-10 items-center'>
         <ul className='md:flex gap-4 hidden '>
-          <li>home</li>
-          <li>services</li>
-          <li>projects</li>
-          <li>contact</li>
+          <Link href={'/#services'}>
+            <li>services</li>
+          </Link>
+
+          <Link href={'projects'}>
+            <li>projects</li>
+          </Link>
+          <Link href={'#contact'}>
+            <li>contact</li>
+          </Link>
         </ul>
         <button
           className='py-2 px-6 font-

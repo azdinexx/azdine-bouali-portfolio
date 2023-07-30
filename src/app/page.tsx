@@ -15,7 +15,9 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Portfolio />
-        <Services />
+        <div id='services'>
+          <Services />
+        </div>
         <Experience />
         {/*       
       <Projects />
