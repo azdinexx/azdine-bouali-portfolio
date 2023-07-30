@@ -6,7 +6,10 @@ import Link from 'next/link';
 export interface ProjectType {
   id: number;
   title: string;
+  date: string;
   slug: string;
+  prev: string;
+  next: string;
   type: 'website' | 'tool' | 'script';
   description: string;
   thumbnail: string;

@@ -19,7 +19,7 @@ function Page() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className='min-h-screen flex flex-col gap-4 my-5 '>
+    <div className='min-h-screen flex flex-col gap-4 my-5 mb-36 '>
       <Link href={'/'}>
         <button className='flex gap-2'>
           <svg
@@ -35,14 +35,16 @@ function Page() {
           </svg>
         </button>
       </Link>
-      {loading && (
+
+      {loading ? (
         <div className='flex justify-center min-h-[50vh] items-center'>
           <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-100'></div>
         </div>
+      ) : (
+        data.map((project: ProjectType, i) => {
+          return <Project project={project} key={project.id} />;
+        })
       )}
-      {data.map((project: ProjectType, i) => {
-        return <Project project={project} key={project.id} />;
-      })}
     </div>
   );
 }
