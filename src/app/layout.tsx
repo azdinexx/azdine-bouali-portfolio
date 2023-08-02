@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Azdine Bouali', url: 'https://azeatbouali.tech/' }],
   generator: 'Next.js',
   robots: 'index, follow',
-  referrer: 'origin-when-cross-origin', // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-referrer
+  referrer: 'origin', // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-referrer
   themeColor: { media: '(prefers-color-scheme: dark)', color: '#000000' },
   colorScheme: 'dark',
   viewport: 'width=device-width, initial-scale=1.0',
