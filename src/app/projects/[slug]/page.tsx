@@ -2,16 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import { ProjectType } from '@/components/Project';
 import Image from 'next/image';
+import { projects } from '../../../../public/projects/project.json';
 
 async function page({ params }: { params: { slug: string } }) {
   const slug = params.slug;
-
-  const res = await fetch(`http://localhost:3000/api/projects/${slug}`);
-  if (!res.ok) {
-    return null;
-  }
-  const data: ProjectType = await res.json();
-
+  const found: ProjectType[] = projects.filter(
+    (project) => project.slug === slug
+  );
+  const data = found[0];
   return (
     <div className='min-h-screen flex flex-col gap-4 my-5 '>
       <Link href={'/projects'}>

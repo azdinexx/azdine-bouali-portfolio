@@ -1,10 +1,11 @@
 'use client';
 import Project from './Project';
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { ProjectType } from './Project';
 import NotYet from './NotYet';
 import Link from 'next/link';
+import { projects } from '../../public/projects/project.json';
+
 function Portfolio() {
   const [active, setactive] = useState(0);
 
@@ -55,29 +56,10 @@ function Portfolio() {
 export default Portfolio;
 
 function Website() {
-  const [loading, setloading] = useState(true);
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get('/api/projects')
-      .then((res) => {
-        const data = res.data.filter((project: ProjectType) => {
-          return project.type === 'website';
-        });
-        setData(data);
-        setloading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <>
-      {loading && (
-        <div className='flex justify-center min-h-[50vh] items-center'>
-          <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-100'></div>
-        </div>
-      )}
-      {data.map((project: ProjectType, i) => {
+      {projects.map((project, i) => {
+        if (project.type !== 'website') return;
         return (
           <Project reverse={i % 2 !== 0} project={project} key={project.id} />
         );
@@ -87,70 +69,28 @@ function Website() {
 }
 
 function Tool() {
-  const [loading, setloading] = useState(true);
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get('/api/projects')
-      .then((res) => {
-        const data = res.data.filter((project: ProjectType) => {
-          return project.type === 'tool';
-        });
-        setData(data);
-        setloading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <>
-      {loading && (
-        <div className='flex justify-center min-h-[50vh] items-center'>
-          <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-100'></div>
-        </div>
-      )}
-      {data.length === 0 ? (
-        <NotYet text='no Tools yet' />
-      ) : (
-        data.map((project: ProjectType, i) => {
-          return (
-            <Project reverse={i % 2 === 0} project={project} key={project.id} />
-          );
-        })
-      )}
+      {projects.map((project, i) => {
+        if (project.type !== 'tool') return;
+        return (
+          <Project reverse={i % 2 !== 0} project={project} key={project.id} />
+        );
+      })}
     </>
   );
 }
 
 function Scripts() {
-  const [loading, setloading] = useState(true);
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get('/api/projects')
-      .then((res) => {
-        const data = res.data.filter((project: ProjectType) => {
-          return project.type === 'script';
-        });
-        setData(data);
-        setloading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <>
-      {loading && (
-        <div className='flex justify-center min-h-[50vh] items-center'>
-          <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-100'></div>
-        </div>
-      )}
-      {data.length === 0 ? (
+      {projects.filter((project) => project.type === 'script').length === 0 ? (
         <NotYet text='no Scripts yet' />
       ) : (
-        data.map((project: ProjectType, i) => {
+        projects.map((project, i) => {
+          if (project.type !== 'script') return;
           return (
-            <Project reverse={i % 2 === 0} project={project} key={project.id} />
+            <Project reverse={i % 2 !== 0} project={project} key={project.id} />
           );
         })
       )}

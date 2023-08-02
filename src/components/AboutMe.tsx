@@ -42,7 +42,7 @@ function AboutMe() {
           I am a full stack software developer with over a year of experience
           building and delivering high-quality web applications. I am proficient
           in a variety of programming languages and technologies, including
-          JavaScript, React, Node.js, Nextjs, MongoDB, and SQL.
+          TypeScript, React, Node.js, Nextjs, MongoDB, and SQL.
         </p>
         <Link
           href={

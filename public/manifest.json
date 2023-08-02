@@ -1,0 +1,9 @@
+{
+  "name": "Azdine bouali",
+  "short_name": "Azdine's Website",
+  "start_url": "/",
+  "display": "standalone",
+
+  "background_color": "#101630",
+  "theme_color": "#101630"
+}

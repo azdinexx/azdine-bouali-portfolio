@@ -10,7 +10,7 @@ export interface ProjectType {
   slug: string;
   prev: string;
   next: string;
-  type: 'website' | 'tool' | 'script';
+  type: string;
   description: string;
   thumbnail: string;
   tag: string;

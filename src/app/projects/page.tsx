@@ -1,23 +1,9 @@
-'use client';
 import React from 'react';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 import { ProjectType } from '@/components/Project';
 import Image from 'next/image';
 import Link from 'next/link';
-
-function Page() {
-  const [loading, setloading] = useState(true);
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get('/api/projects')
-      .then((res) => {
-        setData(res.data);
-        setloading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+import data from '../../../public/projects/project.json';
+async function Page() {
   return (
     <div className='min-h-screen flex flex-col gap-4 my-5 mb-36 '>
       <Link href={'/'}>
@@ -36,15 +22,9 @@ function Page() {
         </button>
       </Link>
 
-      {loading ? (
-        <div className='flex justify-center min-h-[50vh] items-center'>
-          <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-100'></div>
-        </div>
-      ) : (
-        data.map((project: ProjectType, i) => {
-          return <Project project={project} key={project.id} />;
-        })
-      )}
+      {data.projects.map((project: ProjectType, i) => {
+        return <Project project={project} key={project.id} />;
+      })}
     </div>
   );
 }
