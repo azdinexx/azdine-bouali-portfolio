@@ -11,7 +11,6 @@ async function page({ params }: { params: { slug: string } }) {
     return null;
   }
   const data: ProjectType = await res.json();
-  console.log(data);
 
   return (
     <div className='min-h-screen flex flex-col gap-4 my-5 '>
