@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/">
-<channel>
-  <title>ROR Sitemap for https://azeatbouali.tech/</title>
-  <link>https://azeatbouali.tech/</link>
+  <channel>
+    <title>ROR Sitemap for https://azeatbouali.tech/</title>
+    <link>https://azeatbouali.tech/</link>
 
-<item>
-     <link>https://www.azeatbouali.tech/</link>
-     <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
-     <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
-     <ror:updatePeriod>hourly</ror:updatePeriod>
-     <ror:sortOrder>0</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.azeatbouali.tech/projects</link>
-     <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
-     <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
-     <ror:updatePeriod>hourly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.azeatbouali.tech/projects/artossi-ecommerce-website</link>
-     <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
-     <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
-     <ror:updatePeriod>hourly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.azeatbouali.tech/projects/shadow-tool</link>
-     <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
-     <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
-     <ror:updatePeriod>hourly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-</channel>
+    <item>
+      <link>https://www.azeatbouali.tech/</link>
+      <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
+      <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
+      <ror:updatePeriod>daily</ror:updatePeriod>
+      <ror:sortOrder>0</ror:sortOrder>
+      <ror:resourceOf>sitemap</ror:resourceOf>
+    </item>
+    <item>
+      <link>https://www.azeatbouali.tech/projects</link>
+      <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
+      <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
+      <ror:updatePeriod>daily</ror:updatePeriod>
+      <ror:sortOrder>1</ror:sortOrder>
+      <ror:resourceOf>sitemap</ror:resourceOf>
+    </item>
+    <item>
+      <link>https://www.azeatbouali.tech/projects/artossi-ecommerce-website</link>
+      <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
+      <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
+      <ror:updatePeriod>daily</ror:updatePeriod>
+      <ror:sortOrder>2</ror:sortOrder>
+      <ror:resourceOf>sitemap</ror:resourceOf>
+    </item>
+    <item>
+      <link>https://www.azeatbouali.tech/projects/shadow-tool</link>
+      <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
+      <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
+      <ror:updatePeriod>daily</ror:updatePeriod>
+      <ror:sortOrder>3</ror:sortOrder>
+      <ror:resourceOf>sitemap</ror:resourceOf>
+    </item>
+    <item>
+      <link>https://www.azeatbouali.tech/projects/projects</link>
+      <title>Azdine Bouali | Full Stack Developer | Next.js, React, Node.js</title>
+      <description>Azdine Bouali - Full Stack Developer based in Morocco 🇲🇦 , with passion to create high quality websites and applications. I am a self-taught developer, I love to learn new things and I am always looking for new challenges.</description>
+      <ror:updatePeriod>daily</ror:updatePeriod>
+      <ror:sortOrder>4</ror:sortOrder>
+      <ror:resourceOf>sitemap</ror:resourceOf>
+    </item>
+  </channel>
 </rss>

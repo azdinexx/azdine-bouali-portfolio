@@ -82,6 +82,8 @@ export const metadata: Metadata = {
   verification: { google: 'PuJ3o_u68u7AY15-irImWZflZYExXr586HN0_E54WPQ' },
 };
 
+export default Sitemap : 
+
 export default function RootLayout({
   children,
 }: {
