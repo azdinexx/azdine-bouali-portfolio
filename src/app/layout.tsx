@@ -80,6 +80,9 @@ export const metadata: Metadata = {
     images: ' ',
   },
   verification: { google: 'PuJ3o_u68u7AY15-irImWZflZYExXr586HN0_E54WPQ' },
+  alternates: {
+    canonical: 'https://azeatbouali.tech',
+  },
 };
 
 export default function RootLayout({
