@@ -1,28 +1,26 @@
-import Hero from '../components/Hero';
-import AboutMe from '../components/AboutMe';
-import Portfolio from '../components/Portfolio';
-import Services from '../components/Services';
-import Experience from '../components/Experience';
+import Hero from '@/components/Hero';
+import Footer from '@/components/footer';
 
-/*
-import Projects from '../components/Projects';
-import Footer from '../components/Footer'; */
+import React from 'react';
+import RecentWork from '@/components/recentWork';
+import Writing from '@/components/Writing';
 
-export default function Home() {
+import { Sedgwick_Ave_Display } from 'next/font/google';
+
+const font = Sedgwick_Ave_Display({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400'],
+});
+
+function Page() {
   return (
     <>
-      <div className='min-h-screen'>
-        <Hero />
-        <AboutMe />
-        <Portfolio />
-        <div id='services'>
-          <Services />
-        </div>
-        <Experience />
-        {/*       
-      <Projects />
-    <Footer /> */}
-      </div>
+      <Hero />
+      <RecentWork font={font} />
+      <Writing font={font} />
+      <Footer />
     </>
   );
 }
+
+export default Page;

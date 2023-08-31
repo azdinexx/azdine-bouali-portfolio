@@ -1,9 +1,8 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
 import { Metadata } from 'next';
-import Contact from '../components/Contact';
-import Header from '@/components/Header';
 import { Analytics } from '@vercel/analytics/react';
+import Header from '@/components/header';
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
@@ -59,8 +58,6 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   robots: 'index, follow',
   referrer: 'origin', // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-referrer
-  themeColor: { media: '(prefers-color-scheme: dark)', color: '#000000' },
-  colorScheme: 'dark',
   viewport: 'width=device-width, initial-scale=1.0',
   creator: 'Azdine Bouali',
   publisher: 'Azdine Bouali',
@@ -92,16 +89,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>
-        <main className='max-w-5xl mx-auto px-4 md:px-2  '>
-          <Header />
+      <body>
+        <main className={poppins.className + ' bg-background text-text'}>
           {children}
-          <Analytics />
         </main>
-        <Contact />
+        <Analytics />
       </body>
     </html>
   );
 }
 
 import Head from 'next/head';
+import { cn } from '@/utils';
