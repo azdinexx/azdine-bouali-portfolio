@@ -43,13 +43,13 @@ function Page() {
         }}
       >
         <h1 className='text-4xl font-semibold mb-6'>Blog</h1>
-        <p className='max-w-md mx-auto'>
+        <p className='md:max-w-md mx-auto max-w-xs'>
           This is where I write about FullStack development, coding career
           advice, and anything else going on in my life that might benefit
           others.
         </p>
       </div>
-      <div className='grid grid-cols-2 gap-10'>
+      <div className='grid md:grid-cols-2 rid-cols-1 md:gap-10 gap-5'>
         {Articles.map((article, i) => {
           return (
             <Link

@@ -3,9 +3,9 @@ import React from 'react';
 
 function Back({ href }: { href: string }) {
   return (
-    <Link href={href} className='max-w-fit'>
+    <Link href={href} className=' max-w-fit'>
       <div
-        className='text-primary hover:text-secondary max-w-fit '
+        className='text-primary ml-4 md:ml-0 hover:text-secondary max-w-fit '
         style={{
           filter: 'drop-shadow(0 0 12px #188ff7)',
         }}

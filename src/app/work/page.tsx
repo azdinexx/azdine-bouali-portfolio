@@ -45,7 +45,7 @@ function Page() {
       >
         <h1 className='text-4xl font-semibold mb-6'>Work</h1>
       </div>
-      <div className='grid grid-cols-3 gap-5'>
+      <div className='mx-4 md:mx-0 grid md:grid-cols-3 rid-cols-1 md:gap-10 gap-5'>
         {Articles.map((article, i) => {
           return (
             <Link
